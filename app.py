@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     # Data for the home page to pass the maps key
-    data={"map_key":MAP_KEY}
+    data={"map_key": MAP_KEY }
     #returning the rendered html page
     return render_template("home.html",data=data)
 
